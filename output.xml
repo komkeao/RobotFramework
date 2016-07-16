@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160715 16:54:42.214" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="D:\Desktop\jcsse\facebook.robot" id="s1" name="Facebook">
+<test id="s1-t1" name="Like Facebook">
+<kw name="Go Like">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LoginPage}</arg>
+</arguments>
+<msg timestamp="20160715 16:54:43.099" level="INFO">Opening browser 'firefox' to base url 'https://www.instagram.com/accounts/login/?force_classic_login'</msg>
+<status status="PASS" endtime="20160715 16:54:52.930" starttime="20160715 16:54:43.099"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160715 16:54:52.971" starttime="20160715 16:54:52.930"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id_username</arg>
+<arg>komkeao_t</arg>
+</arguments>
+<msg timestamp="20160715 16:54:52.972" level="INFO">Typing text 'komkeao_t' into text field 'id_username'</msg>
+<status status="PASS" endtime="20160715 16:54:53.094" starttime="20160715 16:54:52.972"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id_password</arg>
+<arg>KCStha1i995</arg>
+</arguments>
+<msg timestamp="20160715 16:54:53.094" level="INFO">Typing text 'KCStha1i995' into text field 'id_password'</msg>
+<status status="PASS" endtime="20160715 16:54:53.179" starttime="20160715 16:54:53.094"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>css=input.button-green</arg>
+</arguments>
+<msg timestamp="20160715 16:54:53.179" level="INFO">Clicking button 'css=input.button-green'.</msg>
+<status status="PASS" endtime="20160715 16:55:03.893" starttime="20160715 16:54:53.179"></status>
+</kw>
+<kw name="css=scoreSpriteHeartOpens">
+<assign>
+<var>@{ret_val}</var>
+</assign>
+<msg timestamp="20160715 16:55:03.899" level="FAIL">No keyword with name 'css=scoreSpriteHeartOpens' found.</msg>
+<status status="FAIL" endtime="20160715 16:55:03.899" starttime="20160715 16:55:03.899"></status>
+</kw>
+<status status="FAIL" endtime="20160715 16:55:03.899" starttime="20160715 16:54:43.099"></status>
+</kw>
+<status status="FAIL" endtime="20160715 16:55:03.900" critical="yes" starttime="20160715 16:54:43.099">No keyword with name 'css=scoreSpriteHeartOpens' found.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160715 16:55:04.193" starttime="20160715 16:55:03.904"></status>
+</kw>
+<status status="FAIL" endtime="20160715 16:55:04.193" starttime="20160715 16:54:42.230"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Facebook" pass="0">Facebook</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
