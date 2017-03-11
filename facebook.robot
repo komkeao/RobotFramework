@@ -16,7 +16,7 @@ Go Like
     Open Browser    ${LoginPage}
     Maximize Browser Window
     Input Text    id_username    komkeao_t
-    Input Text    id_password    KCStha1i995
+    Input Text    id_password    
     Click Button    css=input.button-green
     @{ret_val}    css=scoreSpriteHeartOpens
     :FOR  ${item}  IN  @{ret_val}
